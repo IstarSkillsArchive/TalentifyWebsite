@@ -1668,14 +1668,14 @@ tbody {
 /* About Us pages
 ---------------------------------- */
 .team-member .overlay-container {
-	height: 185px;
 	text-align: center;
+}
+.team-member .overlay-container img{
+	height: 185px;
+	width: auto;
 }
 .team-member img {
 	display: inline-block;
-}
-.team-member .image-box-body {
-	height: 492px;
 }
 .team-member small {
 	display: block;
@@ -1699,6 +1699,10 @@ tbody {
 		float: left;
 		width: 45%;
 		padding: 20px 10px 5px 15px;
+	}
+	.team-member .image-box-body {
+		height: 300px;
+		overflow: auto;
 	}
 }
 
@@ -4645,6 +4649,19 @@ a.overlay.small i {
 .image-box {
 	background-color: #fafafa;
 	border: 1px solid #f3f3f3;
+}
+.image-box .overlay-container {
+	background-color: #ddd;
+  	text-align: center;
+  	padding: 10px;
+  	height: 172px;
+  	width: 100%;
+  	display: table;
+}
+.fa-custom {
+	font-size: 6.5em;
+	display: table-cell;
+	vertical-align: middle;
 }
 .grid-space-0 .image-box {
 	border: none;
